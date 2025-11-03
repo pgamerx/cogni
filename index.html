@@ -8,19 +8,33 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .fullscreen-container {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+    .fullscreen-iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   </style>
 </head>
 <body>
-  <!-- Main content of your page goes here -->
-
-  <h2>Iframe Crop Example (Top 100px Hidden)</h2>
-  <div style="width:600px; height:400px; overflow:hidden; position:relative;">
-    <iframe src="https://example.com"
-      style="width:600px; height:500px; position:absolute; top:-100px; left:0; border:none;"></iframe>
+  <div class="fullscreen-container">
+    <iframe
+      src="https://scarf-oil-80409867.figma.site"
+      class="fullscreen-iframe"></iframe>
   </div>
-
-  <!-- Add more page content below as needed -->
-
 </body>
 </html>
